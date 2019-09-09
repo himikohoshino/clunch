@@ -12,7 +12,7 @@ body {
 /* ================================================ */
 header {
 	width: 100%;
-	padding-bottom: 30px;
+	padding-bottom: 3%;
 }
 /* style.css 画面の横幅が769px以上 */ 
 @media screen and (min-width: 769px){
@@ -23,12 +23,12 @@ header {
 
 .mainimage {
 	z-index: 1;
-	margin: 0px 320px;
+	margin: 0 auto;
 	max-width: 100%;
 	height: auto;
 	position: absolute;
 	top: 50%;
-	left: 29%;
+	left: 50%;
 	transform:translate(-50%,-50%);
 	display: flex;
 	justify-content: center;
@@ -36,9 +36,12 @@ header {
 }
 
 .mainimage img {
-	text-align:center;	
+	max-width: 100%;
+	height: auto;
+	/*text-align:center; */
 }
 
+/* 修正後
 .mainimage h1 {
 	color: #000;
 	font-family: Zapfino;
@@ -85,7 +88,7 @@ header {
 	left: 49%;
 	transform:translate(-50%,-50%);
 	margin-bottom:  252px;
-}
+} */
 
 } 
 
@@ -121,9 +124,10 @@ header {
 .mainimage img {
 	max-width: 100%;
 	height: auto;
-	text-align:center;	
+	/*text-align:center;*/	
 }
 
+/* 修正後
 .mainimage h1 {
 	color: #000;
 	font-family: Zapfino;
@@ -165,7 +169,7 @@ header {
 	top: 95%;
 	left: 34%;
 	margin-bottom:  252px;
-} 
+} */ 
 }
 
 /* smart.css 画面の横幅が640pxまで */
@@ -184,19 +188,24 @@ header {
 
 .mainimage {
 	z-index: 1;
-	max-width: 80%;
+	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
 	position: absolute;
-	top: 9%;
-	left: 10%;
+	top: 5%;
+	left: 20%;
+	right: -20%;
 }
 
 .mainimage img {
 	max-width: 80%;
+	margin: 0 auto;
 	height: auto;
-	text-align:center;	
+	margin-left: -10%;
+	/*text-align:center; 修正 */	
 }
+
+/* 修正後
 
 .mainimage h1 {
 	color: #000;
@@ -240,7 +249,7 @@ header {
 	position: absolute;
 	top: 95%;
 	left: 22%;
-}
+} */
 }
 
 /* ================================================ */
@@ -252,7 +261,7 @@ h2 {
 	line-height: 40px;
 	letter-spacing: 0.1em;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 4%;
 }
 
 .content p {
@@ -277,7 +286,7 @@ h2 {
 	line-height: 30px;
 	letter-spacing: 0.1em;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 15%;
 }
 
 .content p {
@@ -303,8 +312,8 @@ h2 {
 /* style.css 画面の横幅が769px以上 */ 
 @media screen and (min-width: 769px){
 .wrapper {
-	max-width:1000px; 
-	margin: 0 190px;
+	max-width:100%; 
+	margin: 0 auto;
 	display: -webkit-flex;
     display: -moz-flex;
     display: flex;
@@ -315,12 +324,18 @@ h2 {
 }
 /* 左側 */
 /* タイトル文　ここから　*/
-.meincontent {
-	width: 500px;
-	position: relative;
-	margin: 30px 0px 25px 0px;
+/*.meincontent */
+.left {
+	width: 50%;
+	/*position: relative; */
+	margin: 3% 0 0 10%;
 }
 
+.left .content-top img{
+	margin-top: -5%;
+}
+
+/* 修正後
 h3 {
 	color: #000;
 	font-size: 120px;
@@ -351,7 +366,8 @@ h5 {
 	position: absolute;
 	top: 70%;
 	left: 3%;
-}
+} */
+
 /* タイトル文　ここまで　*/
 
 /* 詳細　ここから　*/
@@ -424,21 +440,27 @@ h5 {
 
 /* 右側 */
 .right {
-	width: 500px;
-	margin-left: 30px;
+	width: 50%;
+	margin-right: 2%;
+}
+
+.right .meincontent img{
+	margin-top: 10%;
 }
 
 .content-top {
 	position: relative;
-	margin-top: 90px;
-	margin-bottom: 30px;
+	margin-top: 17%;
+	margin-bottom: 3%;
 }
 
+/* 修正後
 .content-top p {
 	position: absolute;
 	top: 66%;
 	left: 58%;
 }
+*/
 
 .content-bottom img {
 	margin-bottom: 60px;
@@ -500,7 +522,7 @@ h5 {
 	max-width:100%;
 	height: auto; 
 	margin: 0 2.8%;
-	padding-top: 3%;
+	padding-top: 6%;
 	display: -webkit-flex;
     display: -moz-flex;
     display: flex;
@@ -511,7 +533,7 @@ h5 {
 
 .meincontent {
 	position: relative;
-	width: 345px;
+	width: 100%;
 	height: auto;
 }
 
@@ -520,7 +542,7 @@ h5 {
 	height: auto;
 }
 
-h3 {
+/*h3 {
 	color: #000;
 	font-size: 80px;
 	font-weight: bold;
@@ -550,7 +572,7 @@ h5 {
 	position: absolute;
 	top: 70%;
 	left: 3%;
-}
+} */
 /* タイトル文　ここまで　*/
 
 /* 詳細　ここから　*/
@@ -559,9 +581,9 @@ h5 {
 	padding-top: 20px;
 }
 
-.left {
+.left {		
+	width: 100%;
 	margin-right: 2%; 
-	max-width: 100%;
 	height: auto;
 }
 
@@ -574,6 +596,11 @@ h5 {
 	font-style: italic;
 	margin-left: 3%;
 }
+
+.left .content-top img {
+	margin-top: 13%;
+}
+
 /* 詳細　ここまで　*/
 
 /* ボタン　ここから　*/
@@ -628,16 +655,22 @@ h5 {
 
 /* 右側 */
 .right {
-	width: 350px;
+	width: 100%;
 	height: auto;
-	margin-right: 10%;
+	margin-top: 5%;
+	margin-right: 2%;
 	padding-left: 2%;
 }
 
+.right .meincontent img{
+	margin-top: -10%;
+}
 
-.right h5 {
+
+/* .right h5 {
 	margin-left: 5%;
 }
+
 .right p {
 	color: #000;
 	font-size: 15px;
@@ -646,31 +679,31 @@ h5 {
 	font-style: italic;
 	word-break: break-all;
 	margin-left: 3%;
-}
+}*/
 
 .content-top {
 	max-width: 100%; 
 	position: relative;
-	margin-top: 12%;
+	/*margin-top: 6%;*/
 	margin-bottom: 3%;
 }
 
 .content-top img {
-	width: 350px;
+	width: 100%;
 	height: auto;
 }
 
-.content-top p {
+/*.content-top p {
 	position: absolute;
 	font-size: 10px;
 	text-align: center;
 	line-height: 20px;
 	top: 65%;
 	left: 63%;
-}
+} */
 
 .content-bottom img {	
-	width: 350px;
+	width: 100%;
 	height: auto;
 	margin-bottom: 60px;
 }
@@ -735,40 +768,14 @@ h5 {
 	max-width: 100%;
 	margin: 0 auto;
 	height: auto;
+	margin-right: 5%;
 }
 
-h3 {
-	color: #000;
-	font-size: 80px;
-	font-weight: bold;
-	font-style: italic;
-	font-family: Meiryo ;
-	position: absolute;
-	top: 5%;
-	left: 11%;
-}
-
-h4	{
-	color: #02b1b1;
-	font-size: 18px;
-	font-family: Snell Roundhand;
-	text-shadow: 5px 6px 1px #f0f0f0;	
-	position: absolute;
-	top: 40%;
-	left: 53%;
-}
-
-h5 {
-	color: #02b1b1;
-	font-family: Meiryo ;
-	font-size: 24px;
-	letter-spacing: 0.06em;
-	font-style: italic;
-	position: absolute;
-	top: 70%;
-	left: 3%;
-}
 /* タイトル文　ここまで　*/
+
+.content-top,.content-bottom {
+	display: none;
+}
 
 /* 詳細　ここから　*/
 .bold {
@@ -838,13 +845,9 @@ h5 {
 
 /* 右側 */
 .right {
-	max-width: 100%;
+	width: 100%;
 	margin: 0 auto;
-}
-
-.right img {
-	max-width: 99%;
-	margin: 0 auto;
+	margin-left: -5%;
 }
 
 .right p {
@@ -857,8 +860,9 @@ h5 {
 	word-break: break-all;
 }
 
-.content-top,.content-bottom {
-	display: none;
+.right .meincontent {
+	margin-top: 12%;
+	margin-right: 25%;
 }
 
 /* pagetop */
